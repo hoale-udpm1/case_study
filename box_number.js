@@ -5,12 +5,16 @@ let matrix = [
     [13, 14, 15, 0],
 ];
 //bắt đầu game khi ấn nút play
-$("#play").bind("click",function(){
-    initialize();
-    beginTime();
+    // $("#play").bind("click",function(){
+    //     initialize();
+    //     beginTime();
     //$("#alert_puzzle").text("");
-    document.getElementById("alert_puzzle").innerText = "";
-})
+    //     document.getElementById("alert_puzzle").innerText = "";
+    // })
+    function playObj() {
+        initialize();
+        beginTime();
+    }
 // Khi click vào 1 sô thì gọi đến hàm move để di chuyển
 $("#puzzle .cell-puzzle").bind("click",function() {
     if(secs > 0){
